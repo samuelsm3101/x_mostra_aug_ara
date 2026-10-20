@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Plus Jakarta Sans', 'Poppins', sans-serif;
+    
+    --primary: #083D77;
+    --primary-foreground: #ffffff;
+    --primary-dark: #052952;
+    --primary-light: #0d54a0;
+    
+    --accent: #38B6FF;
+    --accent-light: #E3F5FF;
+    --accent-dark: #0088cc;
+    
+    --coral: #FF4FA2;
+    --sun: #FFD43B;
+    --emerald: #10B981;
+  }
+
+  body {
+    font-family: var(--font-body);
+    color: #1e293b;
+    background-color: #f8fafc;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Custom background gradients inspired by Unitins CTI & Planeta Água / Ciência Delas */
+.bg-gradient-soft-primary {
+  background: linear-gradient(135deg, rgba(8, 61, 119, 0.04) 0%, rgba(227, 245, 255, 0.7) 100%);
+}
+
+.bg-gradient-ocean {
+  background: linear-gradient(135deg, #083D77 0%, #1e40af 50%, #0284c7 100%);
+}
+
+.bg-gradient-ocean-deep {
+  background: linear-gradient(180deg, #052243 0%, #083D77 60%, #0f4c81 100%);
+}
+
+.bg-gradient-card-glass {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+}
+
+.bg-gradient-snct {
+  background: linear-gradient(135deg, #FFD43B 0%, #FF4FA2 50%, #38B6FF 100%);
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}

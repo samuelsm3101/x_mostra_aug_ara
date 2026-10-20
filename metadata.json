@@ -1,0 +1,8 @@
+{
+  "name": "X Mostra de Ciência e Tecnologia da Unitins",
+  "description": "Portal oficial da X Mostra de Ciência e Tecnologia da Unitins nos Câmpus Augustinópolis e Araguatins, com a programação oficial de 28 e 29 de outubro de 2026, integrada à 23ª SNCT com o tema Ciência Delas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
