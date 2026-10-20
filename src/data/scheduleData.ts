@@ -32,10 +32,134 @@ export interface Activity {
   speakers: Speaker[];
 }
 
+export interface OfficialProgramCard {
+  id: string;
+  order: number;
+  day: '2026-10-28' | '2026-10-29';
+  dayLabel: string;
+  title: string;
+  periodLabel: string;
+  timeRange: string;
+  imageUrl: string;
+  activityCodes: string[];
+  activityIds: string[];
+  description: string;
+  locationSummary: string;
+  speakersSummary: string;
+}
+
+export const OFFICIAL_PROGRAM_CARDS: OfficialProgramCard[] = [
+  {
+    id: "card-1",
+    order: 1,
+    day: "2026-10-28",
+    dayLabel: "28 de Outubro · Quarta-feira",
+    title: "Oficinas da Tarde I",
+    periodLabel: "14h · Oficinas Práticas",
+    timeRange: "14h às 17h",
+    imageUrl: "/programacao-cards/card-01-dia28-14h-oficinas.jpeg",
+    activityCodes: ["Atividade 1", "Atividade 2", "Atividade 3"],
+    activityIds: ["act-1", "act-2", "act-3"],
+    locationSummary: "Sala 17, Lab. Microscopia e Lab. Simulação I (CCS)",
+    speakersSummary: "Prof. Caio Barcelos, Prof. Dr. Bruno Crispim, Janayla Santos e Dr. Breno Galvão",
+    description: "Patentes e Parcerias no SUS (Sala 17); Morcegos como sentinelas da saúde ambiental (Lab. Microscopia); Intubação orotraqueal (Lab. Simulação I)."
+  },
+  {
+    id: "card-2",
+    order: 2,
+    day: "2026-10-28",
+    dayLabel: "28 de Outubro · Quarta-feira",
+    title: "Oficinas da Tarde II",
+    periodLabel: "14h · Práticas Cirúrgicas e Laboratoriais",
+    timeRange: "14h às 18h",
+    imageUrl: "/programacao-cards/card-02-dia28-14h-oficinas.jpeg",
+    activityCodes: ["Atividade 4", "Atividade 5", "Atividade 6"],
+    activityIds: ["act-4", "act-5", "act-6"],
+    locationSummary: "Lab. Práticas Cirúrgicas, Lab. Microbiologia e Sala 14 (CCS)",
+    speakersSummary: "Dr. Rodrigo Santiago da Costa, Prof. Dr. Kleverson Oliveira, Dra. Hellen Pinheiro e Prof. Dr. Lucas dos Santos",
+    description: "Traqueostomia (Lab. Práticas Cirúrgicas); Antimicrobianos na prática (Lab. Microbiologia); Estudos epidemiológicos transversais (Sala 14)."
+  },
+  {
+    id: "card-3",
+    order: 3,
+    day: "2026-10-28",
+    dayLabel: "28 de Outubro · Quarta-feira",
+    title: "Oficinas da Tarde III & Visitação Científica",
+    periodLabel: "14h e 16h · Simulação, Doenças Raras e Pôsteres",
+    timeRange: "14h às 19h",
+    imageUrl: "/programacao-cards/card-03-dia28-14h-16h-oficinas-visitacao.jpeg",
+    activityCodes: ["Atividade 7", "Atividade 8", "Atividade 9"],
+    activityIds: ["act-7", "act-8", "act-9"],
+    locationSummary: "Sala 16, Sala 18 e Câmpus Augustinópolis",
+    speakersSummary: "Lucas Ribeiro Araújo e Keyla Santos de Sousa",
+    description: "Simulação em Controle de IRAS (Sala 16); Desafios no Manejo de Doenças Raras (Sala 18); Visitação aos resumos de Ciências Sociais e Humanas (16h)."
+  },
+  {
+    id: "card-4",
+    order: 4,
+    day: "2026-10-28",
+    dayLabel: "28 de Outubro · Quarta-feira",
+    title: "Abertura Oficial & Roda de Conversa “Ciência Delas”",
+    periodLabel: "19h · Conferência Magna Central",
+    timeRange: "19h às 22h",
+    imageUrl: "/programacao-cards/card-04-dia28-19h-roda-ciencia-delas.jpeg",
+    activityCodes: ["Atividade 10"],
+    activityIds: ["act-10"],
+    locationSummary: "Auditório Central – Câmpus Augustinópolis",
+    speakersSummary: "Profa. Ma. Andyara Letícia (Mediadora), Maria Pantoja (UNIFESSPA) e Eliana Farencena (FAPT)",
+    description: "Roda de conversa “Ciência Delas”: Meninas e Mulheres na Ciência – integrando saúde, justiça, gestão e inovação para transformar o Bico do Papagaio."
+  },
+  {
+    id: "card-5",
+    order: 5,
+    day: "2026-10-29",
+    dayLabel: "29 de Outubro · Quinta-feira",
+    title: "Oficinas Manhã e Tarde I",
+    periodLabel: "9h, 14h e 15h · Saberes, Território e Lattes",
+    timeRange: "09h às 17h",
+    imageUrl: "/programacao-cards/card-05-dia29-09h-14h-15h-oficinas.jpeg",
+    activityCodes: ["Atividade 11", "Atividade 12", "Atividade 13"],
+    activityIds: ["act-11", "act-12", "act-13"],
+    locationSummary: "Câmpus Araguatins (9h), Sala 17 (14h) e Lab. Informática Augustinópolis (15h)",
+    speakersSummary: "Profa. Ma. Amanda Ribeiro Miranda, Profa. Ma. Andyara Letícia e Prof. Me. Paulo Cesar Duarte Farias",
+    description: "Jogos Ancestrais e inovação (Câmpus Araguatins); Diagnóstico Territorial Participativo (Sala 17); Currículo Lattes (Lab. Informática)."
+  },
+  {
+    id: "card-6",
+    order: 6,
+    day: "2026-10-29",
+    dayLabel: "29 de Outubro · Quinta-feira",
+    title: "Oficinas da Tarde II",
+    periodLabel: "15h · Sessões Simultâneas",
+    timeRange: "15h às 17h",
+    imageUrl: "/programacao-cards/card-06-dia29-15h-oficinas.jpeg",
+    activityCodes: ["Atividade 14", "Atividade 15", "Atividade 16"],
+    activityIds: ["act-14", "act-15", "act-16"],
+    locationSummary: "Sala 14 (Augustinópolis), Lab. Informática (Araguatins) e Google Meet (Online)",
+    speakersSummary: "Prof. Dr. Raimundo Carvalho Moura Filho, Prof. Me. José Filho Ferreira Nobre e Profa. Dra. Fernanda Miler Lima Pinto",
+    description: "Terricídio e pensamento de Moira Millán (Sala 14); Overleaf – Escrita científica (Araguatins); Direito em movimento: mulheres e cidadania (Online - Google Meet)."
+  },
+  {
+    id: "card-7",
+    order: 7,
+    day: "2026-10-29",
+    dayLabel: "29 de Outubro · Quinta-feira",
+    title: "Visitação Científica, Encerramento e Premiação",
+    periodLabel: "16h e 19h30 · Pôsteres de Saúde e Cerimônia Cultural",
+    timeRange: "16h às 22h30",
+    imageUrl: "/programacao-cards/card-07-dia29-16h-19h30-visitacao-encerramento.jpeg",
+    activityCodes: ["Atividade 17", "Atividade 18"],
+    activityIds: ["act-17", "act-18"],
+    locationSummary: "Câmpus Augustinópolis (Átrio e Auditório Central)",
+    speakersSummary: "Comissão Científica Propesp & Apresentação do Grupo Girls OCM Dance",
+    description: "Apreciação dos resumos de Ciências da Saúde (16h); Cerimônia Oficial de Encerramento e Premiação dos Melhores Trabalhos (19h30) com Grupo Girls OCM Dance."
+  }
+];
+
 export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "caio-barcelos",
-    name: "Caio William Barcelos Santos",
+    name: "Prof. Caio Barcelos",
     role: "Assessor do NIT",
     institution: "NIT · UNITINS",
     email: "caiobarcelos@unitins.br",
@@ -44,7 +168,7 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "bruno-crispim",
     name: "Prof. Dr. Bruno do Amaral Crispim",
-    role: "Docente do curso de Enfermagem de Augustinópolis",
+    role: "Docente do Curso de Enfermagem",
     institution: "UNITINS · Câmpus Augustinópolis",
     email: "bruno.ac@unitins.br",
     photoUrl: "/palestrantes/bruno-crispim.jpg"
@@ -52,7 +176,7 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "janayla-santos",
     name: "Janayla Alves dos Santos",
-    role: "Acadêmica do 6º período de Enfermagem",
+    role: "Acadêmica de Enfermagem",
     institution: "UNITINS · Câmpus Augustinópolis",
     email: "janaylaalves@unitins.br",
     photoUrl: "/palestrantes/janayla-santos.jpg"
@@ -68,7 +192,7 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "rodrigo-santiago",
     name: "Dr. Rodrigo Santiago da Costa",
-    role: "Médico Residente em Cirurgia Geral pela Unitins",
+    role: "Médico Residente em Cirurgia Geral",
     institution: "UNITINS",
     email: "rodrigo.santiago.costa@outlook.com",
     photoUrl: "/palestrantes/rodrigo-santiago.jpg"
@@ -92,7 +216,7 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "lucas-santos",
     name: "Prof. Dr. Lucas dos Santos",
-    role: "Docente de Enfermagem e Medicina no Câmpus Augustinópolis",
+    role: "Docente dos Cursos de Enfermagem e Medicina",
     institution: "UNITINS · Câmpus Augustinópolis",
     email: "lucas.ds@unitins.br",
     photoUrl: "/palestrantes/lucas-santos.jpg"
@@ -100,15 +224,15 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "lucas-araujo",
     name: "Lucas Ribeiro Araújo",
-    role: "Enfermeiro, especialista em Controle de Infecção Hospitalar, supervisor do SCIH do Hospital Macrorregional Dra. Ruth Noleto (Imperatriz/MA)",
-    institution: "Hospital Macrorregional Dra. Ruth Noleto (Imperatriz/MA)",
+    role: "Enfermeiro · Supervisor do SCIH",
+    institution: "Hospital Macrorregional Dra. Ruth Noleto",
     photoUrl: "/palestrantes/lucas-araujo.jpg"
   },
   {
     id: "keyla-sousa",
     name: "Keyla Santos de Sousa",
-    role: "Enfermeira, especialista em Doenças Raras e em Oncologia Multiprofissional; gerente de Enfermagem do Hospital Macrorregional Dra. Ruth Noleto (Imperatriz/MA); referência sul-maranhense no manejo de pacientes com doença rara",
-    institution: "Hospital Macrorregional Dra. Ruth Noleto (Imperatriz/MA)",
+    role: "Enfermeira · Especialista em Doenças Raras",
+    institution: "Hospital Macrorregional Dra. Ruth Noleto",
     email: "keylaenfer@gmail.com",
     photoUrl: "/palestrantes/keyla-sousa.jpg"
   },
@@ -123,7 +247,7 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "eliana-farencena",
     name: "Eliana Zellmer Poerschke Farencena",
-    role: "Assessoria Técnica da FAPT",
+    role: "Assessoria Técnica da FAPT · Palestrante",
     institution: "FAPT",
     email: "astec.fapt@tecnologia.to.gov.br",
     photoUrl: "/palestrantes/eliana-farencena.jpg"
@@ -131,7 +255,7 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "andyara-correia",
     name: "Profa. Ma. Andyara Letícia de Salles Correia",
-    role: "Docente do Curso de Direito, Câmpus Augustinópolis",
+    role: "Docente do Curso de Direito · Mediadora",
     institution: "UNITINS · Câmpus Augustinópolis",
     email: "andyara.ls@unitins.br",
     photoUrl: "/palestrantes/andyara-correia.jpg"
@@ -171,7 +295,7 @@ export const ALL_SPEAKERS: Speaker[] = [
   {
     id: "fernanda-pinto",
     name: "Profa. Dra. Fernanda Miler Lima Pinto",
-    role: "Docente do Curso de Direito, Câmpus Augustinópolis",
+    role: "Docente do Curso de Direito",
     institution: "UNITINS · Câmpus Augustinópolis",
     email: "fernanda.ml@unitins.br",
     photoUrl: "/palestrantes/fernanda-pinto.jpg"

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Calendar, MapPin, Users, HelpCircle, Newspaper, Info, Bookmark, ExternalLink } from "lucide-react";
+import { Menu, X, Calendar, MapPin, Users, HelpCircle, Newspaper, Info, Bookmark, ExternalLink, Sparkles } from "lucide-react";
 import { OFFICIAL_REGISTRATION_URL } from "../data/scheduleData";
 
 interface HeaderProps {

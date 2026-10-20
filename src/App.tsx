@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import CienciaDelasSection from "./components/CienciaDelasSection";
 import ScheduleSection from "./components/ScheduleSection";
 import SpeakersSection from "./components/SpeakersSection";
 import NewsSection from "./components/NewsSection";
@@ -91,6 +92,9 @@ export default function App() {
           onOpenRegister={() => setIsRegisterOpen(true)}
         />
         <About />
+        <CienciaDelasSection
+          onExploreCienciaDelas={handleExploreSchedule}
+        />
         <ScheduleSection
           bookmarkedIds={bookmarkedIds}
           onToggleBookmark={handleToggleBookmark}

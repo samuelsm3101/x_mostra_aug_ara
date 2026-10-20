@@ -229,6 +229,16 @@ export default function Hero({ onExploreSchedule, onOpenRegister }: HeroProps) {
           </div>
         </div>
 
+        {/* Official Panoramic Banner with Theme Artwork & Partner Logos */}
+        <div className="mt-10 rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm bg-white">
+          <img
+            src="/programacao-cards/banner-oficial-x-mostra.jpeg"
+            alt="X Mostra de Ciência e Tecnologia - Câmpus Araguatins & Augustinópolis - 23ª SNCT - Tema: Ciência Delas"
+            className="w-full h-auto object-cover"
+            loading="lazy"
+          />
+        </div>
+
       </div>
     </section>
   );
